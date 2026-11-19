@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-label="ArabicPlural — Arabic's six plural forms, finally correct">
+  <title>ArabicPlural — Arabic's six plural forms, finally correct</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#081210"/>
+      <stop offset="0.55" stop-color="#0b1a1a"/>
+      <stop offset="1" stop-color="#101a2c"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="580" y1="0" x2="1180" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#34d399"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(1090 40) rotate(90) scale(300)">
+      <stop offset="0" stop-color="#34d399" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#34d399" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="320" fill="url(#bg)"/>
+  <rect width="1280" height="320" fill="url(#glow)"/>
+
+  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="1">
+    <path d="M0 80h1280M0 160h1280M0 240h1280"/>
+    <path d="M160 0v320M320 0v320M480 0v320M640 0v320M800 0v320M960 0v320M1120 0v320"/>
+  </g>
+
+  <rect width="1280" height="4" fill="url(#accent)"/>
+
+  <g font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace">
+    <rect x="64" y="56" width="250" height="30" rx="15" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.12"/>
+    <text x="82" y="76" font-size="12" letter-spacing="2.4" fill="#6ee7b7">SWIFT &#183; CLDR &#183; ZERO DEPS</text>
+    <text x="60" y="174" font-size="56" font-weight="700" letter-spacing="-2" fill="#f8fafc">Arabic<tspan fill="url(#accent)">Plural</tspan></text>
+  </g>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
+    <text x="64" y="214" font-size="20" fill="#94a3b8">Arabic's six plural forms, finally correct.</text>
+    <text x="64" y="252" font-size="13" letter-spacing="1.6" fill="#64748b">ZERO &#183; ONE &#183; TWO &#183; FEW &#183; MANY &#183; OTHER</text>
+  </g>
+
+  <g font-family="'SF Mono', Menlo, Consolas, monospace">
+    <rect x="712" y="62" width="504" height="200" rx="18" fill="#ffffff" fill-opacity="0.04" stroke="#ffffff" stroke-opacity="0.1"/>
+    <text x="742" y="94" font-size="11" letter-spacing="2.2" fill="#64748b">CATEGORY</text>
+
+    <text x="742" y="130" font-size="15" fill="#94a3b8">n = 2</text>
+    <text x="850" y="130" font-size="15" fill="#334155">&#8594;</text>
+    <rect x="1040" y="114" width="146" height="24" rx="12" fill="#34d399" fill-opacity="0.12" stroke="#34d399" stroke-opacity="0.3"/>
+    <text x="1094" y="131" font-size="13" fill="#6ee7b7">two</text>
+
+    <text x="742" y="164" font-size="15" fill="#94a3b8">n = 3&#8211;10</text>
+    <text x="850" y="164" font-size="15" fill="#334155">&#8594;</text>
+    <rect x="1040" y="148" width="146" height="24" rx="12" fill="#22d3ee" fill-opacity="0.12" stroke="#22d3ee" stroke-opacity="0.3"/>
+    <text x="1094" y="165" font-size="13" fill="#67e8f9">few</text>
+
+    <text x="742" y="198" font-size="15" fill="#94a3b8">n = 11&#8211;99</text>
+    <text x="850" y="198" font-size="15" fill="#334155">&#8594;</text>
+    <rect x="1040" y="182" width="146" height="24" rx="12" fill="#a78bfa" fill-opacity="0.12" stroke="#a78bfa" stroke-opacity="0.3"/>
+    <text x="1094" y="199" font-size="13" fill="#c4b5fd">many</text>
+
+    <text x="742" y="232" font-size="15" fill="#94a3b8">n = 100</text>
+    <text x="850" y="232" font-size="15" fill="#334155">&#8594;</text>
+    <rect x="1040" y="216" width="146" height="24" rx="12" fill="#94a3b8" fill-opacity="0.12" stroke="#94a3b8" stroke-opacity="0.3"/>
+    <text x="1094" y="233" font-size="13" fill="#cbd5e1">other</text>
+  </g>
+</svg>
