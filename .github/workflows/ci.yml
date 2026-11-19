@@ -10,7 +10,13 @@ permissions:
 
 jobs:
   test:
-    runs-on: macos-14
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        swift: ["5.9-jammy", "5.10-jammy", "6.0-jammy"]
+    container:
+      image: swift:${{ matrix.swift }}
     steps:
       - uses: actions/checkout@v4
       - name: Swift version
