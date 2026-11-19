@@ -36,7 +36,7 @@ categories, and two of them (`few`, `many`) depend on `n % 100`.
 | 2 | `two` | رسالتان |
 | 3–10, 103, 1003… | `few` | 3 رسائل |
 | 11–99, 111, 199… | `many` | 11 رسالة |
-| 0, 100, 101, 102, 1000, 1.5… | `other` | 100 رسالة |
+| 100, 101, 102, 1000, 1.5… | `other` | 100 رسالة |
 
 ## Install
 
@@ -76,12 +76,15 @@ let templates: [ArabicPluralCategory: String] = [
     .other: "# رسالة",
 ]
 
-ArabicPlural.format(templates, count: 7)   // "٧ رسائل"
-ArabicPlural.format(templates, count: 42)  // "٤٢ رسالة"
+let arabic = Locale(identifier: "ar")
+
+ArabicPlural.format(templates, count: 7, locale: arabic)   // "٧ رسائل"
+ArabicPlural.format(templates, count: 42, locale: arabic)  // "٤٢ رسالة"
 ```
 
-The number is rendered with the given `Locale`, so Arabic-Indic digits appear
-automatically in Arabic locales.
+The number is rendered with the given `Locale` (`.current` by default), so Arabic-Indic
+digits appear only when the locale uses them — pass `Locale(identifier: "ar")` explicitly
+if you want them regardless of the device language.
 
 ## API
 

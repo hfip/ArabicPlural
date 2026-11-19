@@ -77,7 +77,8 @@ public enum ArabicPlural {
     ///     .many: "# رسالة",
     ///     .other: "# رسالة",
     /// ]
-    /// ArabicPlural.format(templates, count: 11) // "١١ رسالة" in an Arabic locale
+    /// ArabicPlural.format(templates, count: 11, locale: Locale(identifier: "ar"))
+    /// // "١١ رسالة"
     /// ```
     ///
     /// Falls back to `.other` when the exact category has no template, and to an
