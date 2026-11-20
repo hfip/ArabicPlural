@@ -103,6 +103,8 @@ ArabicPlural.format(templates, count: 7, locale: Locale(identifier: "ar"))
 
 </div>
 
+Part of the [Arabic dev tools](https://github.com/hfip/arabic-dev-tools) collection.
+
 ## License
 
 MIT. See [LICENSE](LICENSE).
